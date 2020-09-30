@@ -25,7 +25,7 @@ kubectl run --generator=run-pod/v1 -it --rm load-generator --image=busybox /bin/
 ```
 while true; do wget -q -O- http://nginx-service; done
 ```
-*if you need more speeed to see hpa working, you can run these commands again, with a different name to the pod*
+*I recomend you to run these 2 commands again (with a different name to the pod) to see this working quickly*
 * and now, *to see the magic*, just run
 ```
 make get-pods
